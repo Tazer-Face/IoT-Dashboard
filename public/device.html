@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./deviceStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "deviceContainer">
+        <!--Nav Bar-->
+        <div>
+            <nav class = "navBarEle">
+                <a href="./dashBoard.html">DASHBOARD</a>
+                <a href="./user.html">USER DETALS</a>
+                <a href="#">DEVICE DETAILS</a>
+                <button class = "logout">LOGOUT</button>
+            </nav>
+        </div>
+        <!--Add device form-->
+        <div class="addDevice">
+            <form class = "deviceAddForm">
+                <input id="name" name="deviceName" placeholder="NAME">
+                <input id="location" name="deviceLocation" placeholder="LOCATION">
+                <input id="topic" name="deviceTopic" placeholder="TOPIC">
+                <button class="addDev" type="submit">ADD DEVICE</button>
+            </form>
+        </div>
+        <table class ="table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>LOCATION</th>
+                    <th>TOPIC</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Dynamic data-->
+            </tbody>
+        </table>
+        <!--Edit form-->
+        <div class = "editForm">
+            <form class = "editFormEle">
+                <p class = "heading">EDIT FORM</p>
+                <label for="editName">NAME</label>
+                <input id="editName" name="name">
+                <label for="editId">DEVICE ID</label>
+                <input id="editId" name="name"readonly>
+                <label for="editLocation">LOCATION</label>
+                <input id="editLocation" name="location" >
+                <label for="editTopic">TOPIC</label>
+                <input id="editTopic" name="topic">
+                <div class ="editBtns">
+                    <button class ="ok">OK</button>
+                    <button class ="cancel">CANCEL</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./device.js"></script>
+</body>
+</html>

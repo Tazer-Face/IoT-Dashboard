@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./dashBoardStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "dashBoardContainer" >
+        <div>
+            <nav class = "navBarEle">
+                <a>DASHBOARD</a>
+                <a href="./user.html">USER DETALS</a>
+                <a href="./device.html">DEVICE DETAILS</a>
+                <button class = "logout">LOGOUT</button>
+            </nav>
+        </div>
+        <div class = "welcomeTxtCont">
+            <p class="welcomeTxt">WELCOME   <span class="welcomeTxt welcomeName"></span></p>
+        </div>
+        <div id="charts-container"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./dashBoard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

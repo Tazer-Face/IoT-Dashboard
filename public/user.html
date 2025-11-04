@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./userStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "dashBoardContainer" >
+        <div>
+            <nav class = "navBarEle">
+                <a href="./dashBoard.html">DASHBOARD</a>
+                <a href="#">USER DETALS</a>
+                <a href="./device.html">DEVICE DETAILS</a>
+                <button class = "logout">LOGOUT</button>
+            </nav>
+        </div>
+        <!--Add user-->
+        <div class="addUser">
+            <form class = "userAddForm">
+                <input id="userName" name="userName" placeholder="NAME">
+                <input id="userEmail" name="userEmail" placeholder="EMAIL">
+                <input id="userpassword" name="userPassword" placeholder="PASSWORD">
+                <button class="addUser" type="submit">ADD USER</button>
+            </form>
+        </div>
+        <!--User table-->
+        <table class ="table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ROLE</th>
+                    <th>DEVICES</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Dynamic data-->
+            </tbody>
+        </table>
+        <!--Edit form-->
+        <div class = "editForm">
+            <form class = "editFormEle">
+                <p class = "heading">EDIT FORM</p>
+                <label for="name">NAME</label>
+                <input id="name" name="name">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" readonly>
+                <label for="device">DEVICES</label>
+                <div id ="device">
+                    <!--Dynamic data-->
+                </div>
+                <label for="type">USER TYPE</label>
+                <select id="type" name="user" class = "userDropdown">
+                    <option value="user">USER</option>
+                    <option value="admin">ADMIN</option>
+                </select>
+                <div class ="editBtns">
+                    <button class ="ok">OK</button>
+                    <button class ="cancel">CANCEL</button>
+                </div>
+            </form>
+        </div>
+   </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./user.js"></script>
+</body>
+</html>

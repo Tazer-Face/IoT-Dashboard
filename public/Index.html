@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <!--Login form-->
+        <div class="loginCard login">
+            <div class="loginImg">
+                <img src="./Images/Login ICON/loginIcon.png" alt="Login image">
+            </div>
+            <form class="formEle">
+                <input class="inputField" name="email" type="text" placeholder="EMAIL" required><br>
+                <input class="inputField" name="password" type="text" placeholder="PASSWORD" required><br>
+                <button class="subBtn" type="submit">SUBMIT</button>
+            </form>
+            <div class="forgotSignIn">
+                <div><p>Dont have an account ? <a href ="#" onclick="showSignUp()">SIGN UP</a></p></div>
+            </div>
+        </div>
+        <!--Sign up form-->
+        <div class="loginCard signup">
+            <div class="loginImg">
+                <img src="./Images/Login ICON/loginIcon.png" alt="Login image">
+            </div>
+            <form class="formEleLogin formEle">
+                <input class="inputField" name="userName" type="text" placeholder="USERNAME" required><br>
+                <input class="inputField" name="password" type="text" placeholder="PASSWORD" required><br>
+                <input class="inputField" name="email" type="text" placeholder="EMAIL" required><br>
+                <button class="subBtn" type="submit">SUBMIT</button>
+            </form>
+            <div class="forgotSignIn">
+                <div><p>Already have an account ? <a href ="#" onclick="showLogin()">Login</a></p></div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./source.js"></script>  
+</body>
+</html>
